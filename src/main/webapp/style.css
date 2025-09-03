@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.brand {
+  font-size: 50px;
+  color: #00ffe1;
+  font-weight: bold;
+}
+
+.tagline {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #ccc;
+  padding: 10px 0 30px;
+}
+
+.auth-box {
+  background-color: #1a1a1a;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffe1aa;
+}
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #333;
+  gap: 30px;
+}
+
+.auth-tab {
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.auth-tab:hover {
+  color: #ccc;
+}
+
+.auth-tab.active {
+  color: #00ffe1;
+  font-weight: bold;
+  border-bottom: 3px solid #00ffe1;
+}
+
+.form-area {
+  display: none;
+}
+
+.form-area.active {
+  display: block;
+}
+
+.form-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-area input,
+.form-area select {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.form-area button {
+  padding: 12px;
+  background-color: #00ffe1;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.form-area button:hover {
+  background-color: #00c2a8;
+  color: white;
+}
+
+/* Social login */
+.social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-login p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.google-btn,
+.fb-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 120px;
+}
+
+.google-btn:hover {
+  background-color: #db4437;
+  color: white;
+}
+
+.fb-btn:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff7070;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+  user-select: none;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #000;
+  color: #aaa;
+  margin-top: 40px;
+  font-size: 14px;
+} 
